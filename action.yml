@@ -10,9 +10,14 @@ inputs:
     description: 'The id of the Codepost.io assignment you are pushing to'
     required: true
     default: ''
+  github-user:
+    description: 'The github username of the person pushing'
+    required: true
+    default: ''
 runs:
   using: 'docker'
-  image: 'docker://bjucps/codepost-bju-push:v1.0.1'
+  image: 'docker://bjucps/codepost-bju-push:v1.0.3'
   args:
     - ${{ inputs.codepost-api-token }}
     - ${{ inputs.assignment-id }}
+    - ${{ inputs.github-user }}
