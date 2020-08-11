@@ -16,7 +16,7 @@ inputs:
     default: ''
 runs:
   using: 'docker'
-  image: 'docker://bjucps/codepost-bju-push:v1.0.4'
+  image: 'docker://bjucps/codepost-bju-push:v1.0.5'
   args:
     - ${{ inputs.codepost-api-token }}
     - ${{ inputs.assignment-id }}
