@@ -19,4 +19,5 @@ uses: actions/codepost-bju-push
 with:
   codepost-api-token: ${{ secrets.CODEPOST }}
   assignment-id: 1
+  github-user: ${{ github.actor }}
 ```
